@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'eXO2Stencil';
+  src: url('font/eXO2Stencil.ttf') format('truetype');
+}
+
+img {
+  width: 100px;
+}
+
+*{
+  font-family: "Neuton", serif;
+}
+
+h2, h3{
+  font-family: "eXO2Stencil";
+}
