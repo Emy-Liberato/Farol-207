@@ -18,23 +18,59 @@
   </head>
 
   <body>
-    <img src="" alt="fundo do mar" />
+    <div class="container">
+      <img src="assets/ilustracao_fundo.png" alt="ilustração farol" />
+      <svg
+        class="waves"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28"
+        preserveAspectRatio="none"
+        shape-rendering="auto"
+      >
+        <defs>
+          <path
+            id="gentle-wave"
+            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+          />
+        </defs>
+        <g class="parallax">
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="0"
+            fill="rgba(0, 101, 110, 0.7)"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="3"
+            fill="rgb(0, 101, 107, 0.5)"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="5"
+            fill="rgb(0, 101, 107, 0.3)"
+          />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="rgb(0, 101, 107)" />
+        </g>
+      </svg>
+    </div>
 
     <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="#hero">
-              <img src="./assets/logo_farol207.png" alt="logo farol 207" />
-            </a>
-          </li>
+      <div class="headerWrapper">
+        <a href="#hero">
+          <img src="./assets/logo_farol207.png" alt="logo farol 207" />
+        </a>
+        <nav>
           <li><a href="#historia">História</a></li>
           <li><a href="#personagens">Personagens</a></li>
           <li><a href="#saibaMais">Saiba mais</a></li>
           <li><a href="#nossoTime">Nosso time</a></li>
           <li><a href="#inscrevase">Inscreva-se</a></li>
-        </ul>
-      </nav>
+        </nav>
+      </div>
     </header>
 
     <main>
@@ -46,11 +82,14 @@
           ocultas que tornam o farol muito mais do que aparenta. Está preparado
           para enfrentar o desconhecido?
         </p>
-        <button class="botao">Compre aqui</button>
+        <button><img src="assets/botão_hero.png" alt="" /></button>
       </section>
 
       <section id="historia">
-        <img src="https://img.freepik.com/free-psd/paper-parcel-delivery-box-icon-isolated-3d-render-illustration_439185-12621.jpg?t=st=1730577867~exp=1730581467~hmac=3cbdbf386766545a125f9e3bd3ff2a440b42b295f113f44c1919a172ad6d5c8d&w=740" alt="mockup da caixa" />
+        <img
+          src="https://img.freepik.com/free-psd/paper-parcel-delivery-box-icon-isolated-3d-render-illustration_439185-12621.jpg?t=st=1730577867~exp=1730581467~hmac=3cbdbf386766545a125f9e3bd3ff2a440b42b295f113f44c1919a172ad6d5c8d&w=740"
+          alt="mockup da caixa"
+        />
         <div>
           <h2>História</h2>
           <p>
@@ -108,7 +147,7 @@
         <h2>Saiba mais</h2>
         <div>
           <div id="divPlaylist">
-            <i class="uil uil-play"></i>
+            <i class="uil uil-play" class="iconeSaibaMais"></i>
             <p>
               Para proporcionar uma experiência ainda mais imersiva, preparamos
               uma seleção especial de músicas para você! Cada faixa foi
@@ -116,17 +155,17 @@
               nosso jogo, intensificando a diversão e criando o ambiente
               perfeito.
             </p>
-            <button class="botao">Visite nossa playtis</button>
+            <button><img src="assets/botão_playlist.png" alt="" /></button>
           </div>
           <div id="divManual">
-            <i class="uil uil-map"></i>
+            <i class="uil uil-map" class="iconeSaibaMais"></i>
             <p>
               As regras são bem mais simples do que as dos RPGs tradicionais,
               perfeitas para iniciantes e para quem busca diversão sem
               complicação. Mergulhe nessa aventura e descubra um universo
               apaixonante, cheio de possibilidades!
             </p>
-            <button class="botao">Baixe o manual aqui</button>
+            <button><img src="assets/botão_manual.png" alt="" /></button>
           </div>
         </div>
       </section>
