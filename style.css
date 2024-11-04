@@ -19,8 +19,9 @@ h3 {
   color: #250909;
 }
 
-img {
-  width: 100px;
+/* Tirar depois de organizar as imagens */
+body {
+  overflow-x: hidden;
 }
 
 /* background */
@@ -87,7 +88,7 @@ header {
 }
 
 header .headerWrapper {
-  background-color: rgba(29, 87, 128, 0.5);
+  background-color: rgba(0, 31, 53, 0.9);
   width: 95%;
   height: 6rem;
   position: fixed;
@@ -97,6 +98,7 @@ header .headerWrapper {
   justify-content: space-around;
   align-items: center;
   gap: 12rem;
+  z-index: 9999;
 }
 
 header .headerWrapper a img {
@@ -139,7 +141,6 @@ main #hero .heroWrapper {
   flex-direction: column;
   align-items: center;
   margin-left: 10%;
-  /* gap: 1.7rem; */
 }
 
 main #hero .heroWrapper img {
@@ -155,4 +156,27 @@ main #hero .heroWrapper p {
 main #hero .heroWrapper .button {
   width: 23rem;
   transform: rotate(-2.56deg);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+main #hero .heroWrapper .button:hover {
+  transform: scale(1.1);
+}
+
+main #hero .light { /* luz do farol */
+  width: 35%;
+  position: absolute;
+  right: 11.5rem;
+  top: 5rem;
+  opacity: 0;
+  transition: .5s;
+} 
+
+main #hero .light img {
+  width: 100%;
+}
+
+main #hero .light:hover {
+  opacity: 1;
 }
