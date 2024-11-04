@@ -7,7 +7,7 @@
 
 * {
   font-family: "Neuton", serif;
-  color: #ebf2ab;
+  color: #DECDB0;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -17,12 +17,6 @@ h2,
 h3 {
   font-family: "eXO2Stencil";
   color: #250909;
-}
-
-button {
-  border: none;
-  background: none;
-  cursor: pointer;
 }
 
 img {
@@ -106,7 +100,7 @@ header .headerWrapper {
 }
 
 header .headerWrapper a img {
-  width: 7rem;
+  width: 6rem;
 }
 
 header .headerWrapper nav {
@@ -122,4 +116,43 @@ header .headerWrapper nav li a {
   font-family: "eXO2Stencil", sans-serif;
   font-size: 1.6rem;
   color: white;
+}
+
+/* main */
+
+main{
+  padding: 0 10%;
+}
+
+/* hero */
+
+main #hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+main #hero .heroWrapper {
+  width: 30%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10%;
+  /* gap: 1.7rem; */
+}
+
+main #hero .heroWrapper img {
+  margin: 2rem 0;
+  width: 11rem;
+}
+
+main #hero .heroWrapper p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+main #hero .heroWrapper .button {
+  width: 23rem;
+  transform: rotate(-2.56deg);
 }
