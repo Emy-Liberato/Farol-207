@@ -7,7 +7,7 @@
 
 * {
   font-family: "Neuton", serif;
-  color: #DECDB0;
+  color: #decdb0;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -122,7 +122,7 @@ header .headerWrapper nav li a {
 
 /* main */
 
-main{
+main {
   padding: 0 10%;
 }
 
@@ -164,14 +164,15 @@ main #hero .heroWrapper .button:hover {
   transform: scale(1.1);
 }
 
-main #hero .light { /* luz do farol */
+main #hero .light {
+  /* luz do farol */
   width: 35%;
   position: absolute;
   right: 11.5rem;
   top: 5rem;
   opacity: 0;
-  transition: .5s;
-} 
+  transition: 0.5s;
+}
 
 main #hero .light img {
   width: 100%;
@@ -179,4 +180,46 @@ main #hero .light img {
 
 main #hero .light:hover {
   opacity: 1;
+}
+
+/* secao historia */
+
+main #historia {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 8rem;
+  margin-top: 8rem ;
+}
+
+main #historia img {
+  width: 45%;
+}
+
+main #historia .textoHistoria {
+  padding: 10% 8.5%;
+  width: 55%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+}
+
+main #historia .textoHistoria h2 {
+  font-size: 5em;
+}
+
+main #historia .textoHistoria p {
+  text-align: justify;
+  color: #250909;
+  font-size: 1.4rem;
+}
+
+main #historia .textoHistoria #caixaTexto {
+  position: absolute;
+  width: 33rem;
+  z-index: -999;
+  bottom: 6.5rem;
+  left: 4.5rem;
 }
