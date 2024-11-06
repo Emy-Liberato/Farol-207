@@ -258,7 +258,7 @@ main #personagens .cards img{
 
 main #saibaMais h2 {
   padding: 9.5rem 0 0.5rem 0;
-  margin-top: 5rem;
+  margin-top: 6rem;
 }
 
 main #saibaMais #textoSaibaMais {
@@ -267,14 +267,21 @@ main #saibaMais #textoSaibaMais {
   margin: 0 3rem;
 }
 
-main #saibaMais #textoSaibaMais i{
+main #saibaMais #textoSaibaMais a i{
   font-size: 9rem;
   color: #decdb0;
   margin-bottom: -2rem;
+  cursor: pointer;
 }
 
 main #saibaMais #textoSaibaMais img{
   width: 31rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+main #saibaMais #textoSaibaMais img:hover {
+  transform: scale(1.1);
 }
 
 main #saibaMais #textoSaibaMais .saibaMais {
@@ -283,4 +290,28 @@ main #saibaMais #textoSaibaMais .saibaMais {
   align-items: center;
   gap: 2.5rem;
   width: 30rem; 
+}
+
+/* nosso time */
+
+main #nossoTime h2 {
+  margin-top: 9rem;
+  padding-top: 9.4rem;
+}
+
+main #nossoTime .cardsTime {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+main #nossoTime .cardsTime .cardTime {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+main #nossoTime .cardsTime .cardTime img {
+  width: 8.7rem;
+  margin: 2rem 0 1rem 0;
 }
