@@ -203,10 +203,9 @@ main #hero .light:hover {
 /* secao historia */
 
 main #historia {
-  height: 100vh;
   display: flex;
   align-items: center;
-  padding-top: 8rem;
+  padding-top: 4.5rem;
   margin-top: 8rem;
 }
 
@@ -239,18 +238,49 @@ main #historia .textoHistoria #caixaTexto {
 /* Personagens */
 
 main #personagens {
-  padding-top: 10rem;
+  padding-top: 9.5rem;
 }
 
 main #personagens .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 12rem;
-  row-gap: 3rem;
+  row-gap: 1.8rem;
   margin-top: 2rem;
 }
 
 main #personagens .cards img{
   width: 100%;
   cursor: pointer;
+}
+
+/* saiba mais */
+
+main #saibaMais h2 {
+  padding: 9.5rem 0 0.5rem 0;
+  margin-top: 5rem;
+}
+
+main #saibaMais #textoSaibaMais {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 3rem;
+}
+
+main #saibaMais #textoSaibaMais i{
+  font-size: 9rem;
+  color: #decdb0;
+  margin-bottom: -2rem;
+}
+
+main #saibaMais #textoSaibaMais img{
+  width: 31rem;
+}
+
+main #saibaMais #textoSaibaMais .saibaMais {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  width: 30rem; 
 }
