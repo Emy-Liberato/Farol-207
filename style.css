@@ -6,17 +6,39 @@
 /* reset */
 
 * {
-  font-family: "Neuton", serif;
-  color: #decdb0;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-h2,
-h3 {
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+  width: 15px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: #181818;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #decdb0;
+  border-radius: 10px;
+}
+
+h2 {
   font-family: "eXO2Stencil";
   color: #250909;
+  font-size: 5em;
+}
+
+p {
+  font-family: "Neuton", serif;
+  color: #decdb0;
+  font-size: 1.4rem;
+  text-align: justify;
 }
 
 /* Tirar depois de organizar as imagens */
@@ -42,7 +64,7 @@ body {
 .container svg {
   height: 10rem;
   position: absolute;
-  top: 77vh;
+  top: 78vh;
   width: 100%;
 }
 
@@ -88,7 +110,7 @@ header {
 }
 
 header .headerWrapper {
-  background-color: rgba(0, 31, 53, 0.9);
+  background-color: rgba(0, 31, 53, 0.95);
   width: 95%;
   height: 6rem;
   position: fixed;
@@ -99,6 +121,7 @@ header .headerWrapper {
   align-items: center;
   gap: 12rem;
   z-index: 9999;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* sombra na nav */
 }
 
 header .headerWrapper a img {
@@ -148,11 +171,6 @@ main #hero .heroWrapper img {
   width: 11rem;
 }
 
-main #hero .heroWrapper p {
-  font-size: 20px;
-  text-align: justify;
-}
-
 main #hero .heroWrapper .button {
   width: 23rem;
   transform: rotate(-2.56deg);
@@ -189,7 +207,7 @@ main #historia {
   display: flex;
   align-items: center;
   padding-top: 8rem;
-  margin-top: 8rem ;
+  margin-top: 8rem;
 }
 
 main #historia img {
@@ -206,14 +224,8 @@ main #historia .textoHistoria {
   position: relative;
 }
 
-main #historia .textoHistoria h2 {
-  font-size: 5em;
-}
-
 main #historia .textoHistoria p {
-  text-align: justify;
   color: #250909;
-  font-size: 1.4rem;
 }
 
 main #historia .textoHistoria #caixaTexto {
@@ -222,4 +234,23 @@ main #historia .textoHistoria #caixaTexto {
   z-index: -999;
   bottom: 6.5rem;
   left: 4.5rem;
+}
+
+/* Personagens */
+
+main #personagens {
+  padding-top: 10rem;
+}
+
+main #personagens .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 12rem;
+  row-gap: 3rem;
+  margin-top: 2rem;
+}
+
+main #personagens .cards img{
+  width: 100%;
+  cursor: pointer;
 }
