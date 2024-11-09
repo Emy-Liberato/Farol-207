@@ -288,13 +288,6 @@ main #personagens .cards img:hover {
   background: url(assets/fundo_ficha.png)
 }
 
-/* #modal .modalContent #texturaFicha{
-  position: absolute;
-  z-index: -333;
-  width: 62%;
-  top: 3rem;
-} */
-
 #modal .modalContent span {
   position: absolute;
   cursor: pointer;

@@ -58,52 +58,8 @@
       </svg>
     </div>
 
-    <div id="modal">
-      <div class="modalContent">
-        <span onclick="closeModalPersonagem()">x</span>
-        <!-- <img id="texturaFicha" src="assets/fundo_ficha.png" alt="textura de pergaminho" /> -->
-        <div class="ilustracaoNome">
-          <h2>
-            Cocodrilo <br />
-            Croc Cocada
-          </h2>
-          <img src="assets/modal/cocodrilo.png" alt="Ilustração do cocodrilo" />
-        </div>
-        <div class="infos">
-          <div class="atributos">
-            <p>Idade: 20</p>
-            <p>Altura: 1,82</p>
-            <p>Peso: 120kg</p>
-          </div>
-          <div class="modalText">
-            <p>
-              Um enigmático rei do crime, fez seu nome na rua e comandava uma
-              grande gangue, até que um dia em uma emboscada metade de seus
-              homens morreram e ele e os sobreviventes fugiram para um recanto
-              próximo ao mar, lá ao acordar, ele já estava sozinho e tudo que
-              restou foram marcas arranhadas no chão e unhas inteiras decepadas.
-              Desde então ele buscou criar seu nome como um pirata, tentou dar
-              uma “repaginada”, ele bem que conseguiu, porém nunca conseguia uma
-              tripulação que o agradasse, afinal, piratas são muito diferentes
-              de membros de facções, então buscou formar uma trupe nova,
-              chamando só as pessoas mais casca-grossa e improváveis que
-              achasse.
-            </p>
-            <p>
-              <strong>Curiosidade Marítima:</strong> Cocodrilo era sempre visto
-              com um charuto em sua boca e fumaça o cercando, mas o charuto era
-              falso, só continha palha e grama, ele obviamente não tragava a
-              fumaça, na verdade ele sempre odiou fumar.
-            </p>
-            <p>
-              <strong
-                >“Fumar é coisa de otário, como vou manter esses músculos se eu
-                virar fumante?”</strong
-              >
-            </p>
-          </div>
-        </div>
-      </div>
+    <div id="modal" onclick="closeModalPersonagem()">
+      
     </div>
 
     <header>
@@ -171,32 +127,32 @@
         <div class="cards">
           <img
             src="assets/characters/cocodrilo.png"
-            onclick="openModalPersonagem()"
+            onclick="openModalPersonagem('Cocodrilo Croc Cocada')"
             alt="Cocodrilo"
           />
           <img
             src="assets/characters/crustana.png"
-            onclick="openModalPersonagem()"
+            onclick="openModalPersonagem('Crustana L’agosta')"
             alt="Crustana"
           />
           <img
             src="assets/characters/harpina.png"
-            onclick="openModalPersonagem()"
+            onclick="openModalPersonagem('Harpina Vultur')"
             alt="Harpina"
           />
           <img
             src="assets/characters/khara.png"
-            onclick="openModalPersonagem()"
+            onclick="openModalPersonagem('Khara Vella')"
             alt="Khara"
           />
           <img
             src="assets/characters/patoel.png"
-            onclick="openModalPersonagem()"
+            onclick="openModalPersonagem('Patoel Quaker de Patas III')"
             alt="Patoel"
           />
           <img
             src="assets/characters/piragon.png"
-            onclick="openModalPersonagem()"
+            onclick="openModalPersonagem('Piragon, o Mago')"
             alt="Piragon"
           />
         </div>
@@ -372,6 +328,7 @@
       </div>
     </footer>
 
+    <script src="dados.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
