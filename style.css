@@ -28,6 +28,10 @@ html {
   border-radius: 10px;
 }
 
+main, footer {
+  padding: 0 10%;
+}
+
 h2 {
   font-family: "eXO2Stencil", serif;
   color: #250909;
@@ -41,7 +45,8 @@ p {
   text-align: justify;
 }
 
-input, button {
+input,
+button {
   font-family: "Neuton", serif;
   color: #250909;
   border: 0.27rem solid #250909;
@@ -51,9 +56,8 @@ input, button {
   box-shadow: none;
 }
 
-/* Tirar depois de organizar as imagens */
-body {
-  overflow-x: hidden;
+a {
+  text-decoration: none;
 }
 
 /* background */
@@ -147,16 +151,9 @@ header .headerWrapper nav {
 }
 
 header .headerWrapper nav li a {
-  text-decoration: none;
   font-family: "eXO2Stencil", sans-serif;
   font-size: 1.6rem;
   color: white;
-}
-
-/* main */
-
-main {
-  padding: 0 10%;
 }
 
 /* hero */
@@ -343,7 +340,7 @@ main #inscrevase .access {
 }
 
 main #inscrevase .access h2 {
-  padding-top: 9rem;
+  padding-top: 7rem;
   margin-top: 8rem;
   color: #decdb0;
 }
@@ -359,17 +356,73 @@ main #inscrevase .access form {
 main #inscrevase .access form input {
   padding-left: 0.3rem;
   width: 100%;
-  font-size: 1rem;
+  font-size: 1.3rem;
+  height: 3rem;
 }
 
 main #inscrevase .access form input::placeholder {
-  color: #250909; 
+  color: #250909;
 }
 
 main #inscrevase .access form button {
-  width: 6rem;
+  width: 8rem;
+  height: 3rem;
   font-family: "eXO2Stencil", serif;
   padding-top: 0.1rem;
   margin-top: 1rem;
   font-size: 1.3rem;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 35rem;
+}
+
+footer img {
+  width: 34rem;
+}
+
+footer .footer {
+  display: flex;
+  align-items: center;
+}
+
+footer .footer #nossasRedes {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem;
+  margin-bottom: 1.6rem; 
+}
+
+footer .footer #nossasRedes span {
+  font-size: 1.4rem;
+  font-family: "Neuton", serif; 
+}
+
+footer .footer #nossasRedes div {
+  font-size: 2.6rem;
+}
+
+footer .footer #nossasRedes div a {
+  color: black;
+}
+
+footer .footer #faleConosco {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  color: black;
+}
+
+footer .footer #faleConosco p {
+  font-size: 1.6rem;
+  color: black;
+}
+
+footer .footer #faleConosco p i{
+  margin-right: 0.5rem;
+  font-size: 1.6rem;
 }
