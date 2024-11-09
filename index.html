@@ -58,6 +58,13 @@
       </svg>
     </div>
 
+    <div id="modal">
+      <div class="modalContent">
+        <span onclick="closeModalPersonagem()">x</span>
+        <p>Eu existo!!</p>
+      </div>
+    </div>
+
     <header>
       <div class="headerWrapper">
         <a href="#hero">
@@ -121,12 +128,36 @@
         <h2>Personagens</h2>
 
         <div class="cards">
-          <img src="assets/characters/cocodrilo.png" alt="Cocodrilo" />
-          <img src="assets/characters/crustana.png" alt="Crustana" />
-          <img src="assets/characters/harpina.png" alt="Harpina" />
-          <img src="assets/characters/khara.png" alt="Khara" />
-          <img src="assets/characters/patoel.png" alt="Patoel" />
-          <img src="assets/characters/piragon.png" alt="Piragon" />
+          <img
+            src="assets/characters/cocodrilo.png"
+            onclick="openModalPersonagem()"
+            alt="Cocodrilo"
+          />
+          <img
+            src="assets/characters/crustana.png"
+            onclick="openModalPersonagem()"
+            alt="Crustana"
+          />
+          <img
+            src="assets/characters/harpina.png"
+            onclick="openModalPersonagem()"
+            alt="Harpina"
+          />
+          <img
+            src="assets/characters/khara.png"
+            onclick="openModalPersonagem()"
+            alt="Khara"
+          />
+          <img
+            src="assets/characters/patoel.png"
+            onclick="openModalPersonagem()"
+            alt="Patoel"
+          />
+          <img
+            src="assets/characters/piragon.png"
+            onclick="openModalPersonagem()"
+            alt="Piragon"
+          />
         </div>
       </section>
 
@@ -286,7 +317,8 @@
           <div>
             <div id="faleConosco">
               <p>
-                <i class="uil uil-envelope"></i><span>boitatajogos@gmail.com</span>
+                <i class="uil uil-envelope"></i
+                ><span>boitatajogos@gmail.com</span>
               </p>
               <p>
                 <i class="uil uil-map-marker"></i
@@ -298,5 +330,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

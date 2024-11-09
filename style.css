@@ -207,7 +207,7 @@ main #hero .light:hover {
   opacity: 1;
 }
 
-/* secao historia */
+/* historia */
 
 main #historia {
   display: flex;
@@ -259,6 +259,38 @@ main #personagens .cards {
 main #personagens .cards img {
   width: 100%;
   cursor: pointer;
+  transition: 0.5s;
+}
+
+main #personagens .cards img:hover {
+  transform: scale(1.1);
+}
+
+/* modal personagens */
+
+#modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+#modal .modalContent {
+  background-color: white;
+  width: 600px;
+}
+
+#modal .modalContent span {
+  position: absolute;
+  cursor: pointer;
+  color: white;
+  top: 10px;
+  right: 10px;
 }
 
 /* saiba mais */
