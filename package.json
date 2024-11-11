@@ -1,11 +1,11 @@
 {
   "scripts": {
-    "start": "node servern.js",
+    "start": "node server.js",
     "dev": "nodemon --exec node server.js"
   },
-
   "dependencies": {
     "body-parser": "^1.20.3",
+    "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "nodemailer": "^6.9.16",
     "nodemon": "^3.1.7"

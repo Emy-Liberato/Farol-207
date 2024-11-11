@@ -1,3 +1,4 @@
+require("dotenv").config()
 const express = require("express"); //colocando bibilioteca dento de uma variavel
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
@@ -19,13 +20,13 @@ app.post("/", async (req, res) => {
   const transporter = nodemailer.createTransport({ 
     service: 'gmail', 
     auth: { 
-      user:"boitatajogos@gmail.com",
-      pass: "" //gerar senha
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS,
     },
   })
 
   const emailOptions = {
-    from: "boitatajogos@gmail.com",
+    from: process.env.EMAIL_USER,
     to: email,
     subject: "Obrigada por se inscrever!",
     text: `Obrigada por se inscrever, ${nome}` 
@@ -33,10 +34,10 @@ app.post("/", async (req, res) => {
 
   try {
     await transporter.sendMail(emailOptions)
-    res.status(200).send("Inscrição realizada com sucesso!")
+    res.redirect("/?sucess=true")
   } catch(Erro) {
     console.log(Erro);
-    res.status(500).send("Por favor tente novamente")
+    res.redirect("/?sucess=false")
   }
 });
 

@@ -45,3 +45,12 @@ function closeModalPersonagem() {
   body.style.overflow = "visible";
   modalPersonagens.innerHTML = "";
 }
+
+window.addEventListener("load",function(){
+  const urlParams = new URLSearchParams(window.location.search)
+  if (urlParams.get("sucess") === "true"){
+    alert("deu certo!!!!")
+  } else if (urlParams.get("sucess") === "false"){
+    alert("Não deu certo :(")
+  }
+})
