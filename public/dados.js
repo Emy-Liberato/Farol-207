@@ -1,7 +1,7 @@
 const personagens = [
   {
     nome: "Cocodrilo Croc Cocada",
-    imagem: "./assets/modal/cocodrilo.png",
+    imagem: "./assets/characters/cocodrilo.png",
     idade: 43,
     altura: 1.83,
     peso: 133,
@@ -14,7 +14,7 @@ const personagens = [
   },
   {
     nome: "Crustana L’agosta",
-    imagem: "./assets/modal/crustana.png",
+    imagem: "./assets/characters/crustana.png",
     idade: 32,
     altura: 2.02,
     peso: 92,
@@ -27,7 +27,7 @@ const personagens = [
   },
   {
     nome: "Harpina Vultur",
-    imagem: "./assets/modal/harpina.png",
+    imagem: "./assets/characters/harpina.png",
     idade: 28,
     altura: 1.78,
     peso: 48,
@@ -38,7 +38,7 @@ const personagens = [
   },
   {
     nome: "Khara Vella",
-    imagem: "./assets/modal/khara.png",
+    imagem: "./assets/characters/khara.png",
     idade: 36,
     altura: 1.66,
     peso: 46,
@@ -51,7 +51,7 @@ const personagens = [
   },
   {
     nome: "Patoel Quaker de Patas III",
-    imagem: "./assets/modal/patoel.png",
+    imagem: "./assets/characters/patoel.png",
     idade: 126,
     altura: 1.46,
     peso: 206,
@@ -64,7 +64,7 @@ const personagens = [
   },
   {
     nome: "Piragon, o Mago",
-    imagem: "./assets/modal/piragon.png",
+    imagem: "./assets/characters/piragon.png",
     idade: "?",
     altura: 2.37,
     peso: 207,

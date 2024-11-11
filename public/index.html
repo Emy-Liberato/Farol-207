@@ -58,9 +58,7 @@
       </svg>
     </div>
 
-    <div id="modal" onclick="closeModalPersonagem()">
-      
-    </div>
+    <div id="modal" onclick="closeModalPersonagem()"></div>
 
     <header>
       <div class="headerWrapper">
@@ -275,13 +273,13 @@
         <div class="access">
           <h2>Inscreva-se</h2>
           <p>
-            Inscreva-se no nosso blog e receba as principais novidade do Farol
-            207 e outros lançamentos da Boitata Jogos e
+            Inscreva-se na nossa newsletter e receba atualizações diretamente em
+            seu e-mail. Fique por dentro das novidades, e
             <strong>concorra brindes exclusivos!</strong>
           </p>
           <form>
-            <input type="text" placeholder="E-mail" />
-            <input type="text" placeholder="Nome" />
+            <input type="email" name="email" placeholder="E-mail" />
+            <input type="text" name="nome" placeholder="Nome" />
             <button onclick="chamarModalInscrevase()">Enviar</button>
           </form>
         </div>
@@ -330,5 +328,6 @@
 
     <script src="dados.js"></script>
     <script src="script.js"></script>
+    <script src="../server.js"></script>
   </body>
 </html>
