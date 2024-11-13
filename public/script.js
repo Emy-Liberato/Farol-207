@@ -1,4 +1,5 @@
 const modalPersonagens = document.getElementById("modal");
+const modalEmail = document.getElementById("modalIncrevase");
 const body = document.body;
 
 function openModalPersonagem(nomeDoPersonagem) {
@@ -9,7 +10,7 @@ function openModalPersonagem(nomeDoPersonagem) {
 
   modalPersonagens.innerHTML = `
     <div class="modalContent">
-      <span onclick="closeModalPersonagem()">x</span>
+      <span onclick="closeModalPersonagem()">X</span>
       <div class="ilustracaoNome">
         <h2>
           ${personagem.nome}
@@ -46,11 +47,16 @@ function closeModalPersonagem() {
   modalPersonagens.innerHTML = "";
 }
 
-window.addEventListener("load",function(){
-  const urlParams = new URLSearchParams(window.location.search)
-  if (urlParams.get("sucess") === "true"){
-    alert("deu certo!!!!")
-  } else if (urlParams.get("sucess") === "false"){
-    alert("Não deu certo :(")
+window.addEventListener("load", function () {
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get("sucess") === "true") {
+    modalEmail.style.display = "flex";
+    body.style.overflow = "hidden";
+    setTimeout(() => {
+      modalEmail.style.display = "none";
+      body.style.overflow = "visible";
+    }, 2500);
+  } else if (urlParams.get("sucess") === "false") {
+    alert("Não deu certo :(");
   }
-})
+});

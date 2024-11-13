@@ -19,11 +19,11 @@ const personagens = [
     altura: 2.02,
     peso: 92,
     historia:
-      "Um enigmático rei do crime, fez seu nome na rua e comandava uma grande gangue, até que um dia em uma emboscada metade de seus homens morreram e ele e os sobreviventes fugiram para um recanto próximo ao mar, lá ao acordar, ele já estava sozinho e tudo que restou foram marcas arranhadas no chão e unhas inteiras decepadas. Desde então ele buscou criar seu nome como um pirata, tentou dar uma “repaginada”, ele bem que conseguiu, porém nunca conseguia uma tripulação que o agradasse, afinal, piratas são muito diferentes de membros de facções, então buscou formar uma trupe nova, chamando só as pessoas mais casca-grossa e improváveis que achasse.",
+      `Uma lutadora lendaria, uma rainha dentre as ruas, Crustana desde jovem era facinada por lutar e adorava "brincar de lutinha", devido a ser uma Khrusta, talvez isso seja natural para ela, mas mesmo dentro de seus conteporaneos, Crustana tinha uma paixão inegavel pelo boxe, porem devido as suas circunstancias, as unicas lutas que ela conseguia eram no submundo de lutas ilegais. Rapidamente apos se tornar uma lutadora "profissional", ela foi coroada com o soco mais rapido dos mares, uma verdadeira lenda.`,
     curiosidade:
-      "Cocodrilo era sempre visto com um charuto em sua boca e fumaça o cercando, mas o charuto era falso, só continha palha e grama, ele obviamente não tragava a fumaça, na verdade ele sempre odiou fumar.",
+      "Pelo mais incrivel que pareça, crustana é muito sensivel, e muito cuidadosa, tudo que realmente importa para ela, ela cuida como se fosse seu maior tesouro, não é atoa que as luvas de crochê entregadas a ela por Khara estejam em condições pristinas até hoje.",
     frase:
-      "Fumar é coisa de otário, como vou manter esses músculos se eu virar fumante?",
+      "Eu não entendo oque vocês veem nesses tesouros brilhantes, deve doer socar com isso ai na mão.",
   },
   {
     nome: "Harpina Vultur",
@@ -47,7 +47,7 @@ const personagens = [
     curiosidade:
       "Devido a nunca realmente ter tido uma infancia, Khara é facilmente encantada com qualquer coisa meramente fofa, em especial bonecas, ela usa seus braços para fazer crochê e criar bonecas das pessoas que ela mais aprecia.",
     frase:
-      "Queria ter dedos pra poder colocar laçinhos nas minhas bonecas... Já imaginou como ficaria o Patoel de laçinho ?!?!",
+      "Queria ter dedos pra poder colocar laçinhos nas minhas bonecas...Já imaginou como ficaria o Patoel de laçinho?!",
   },
   {
     nome: "Patoel Quaker de Patas III",
@@ -56,11 +56,11 @@ const personagens = [
     altura: 1.46,
     peso: 206,
     historia:
-      "Um enigmático rei do crime, fez seu nome na rua e comandava uma grande gangue, até que um dia em uma emboscada metade de seus homens morreram e ele e os sobreviventes fugiram para um recanto próximo ao mar, lá ao acordar, ele já estava sozinho e tudo que restou foram marcas arranhadas no chão e unhas inteiras decepadas. Desde então ele buscou criar seu nome como um pirata, tentou dar uma “repaginada”, ele bem que conseguiu, porém nunca conseguia uma tripulação que o agradasse, afinal, piratas são muito diferentes de membros de facções, então buscou formar uma trupe nova, chamando só as pessoas mais casca-grossa e improváveis que achasse.",
+      "Um bastião de ferro e uma criatura peculiar, Patoel! O verdadeiro corpo é o pato dentro do robô, uma raça anciã e a muito tempo devastada, de tempo imemorial. Patoel por viver por um tempo absurdamente longo, se encantou com o mundo da robotica, avançando anos e anos de tecnologia a frente do mundo, Patoel criou uma armadura e uma legião de torretas para se defender ao explorar os mares, em nome da ciencia, claro.",
     curiosidade:
-      "Cocodrilo era sempre visto com um charuto em sua boca e fumaça o cercando, mas o charuto era falso, só continha palha e grama, ele obviamente não tragava a fumaça, na verdade ele sempre odiou fumar.",
+      "Tecnicamente Patoel ainda é uma criança, por praticamente nunca envelhecer, sua maturidade tambem nunca chegou, ele é como uma criança super inteligente, e talvez seja nosso filho favorito!",
     frase:
-      "Fumar é coisa de otário, como vou manter esses músculos se eu virar fumante?",
+      "Melhore.",
   },
   {
     nome: "Piragon, o Mago",
@@ -71,7 +71,7 @@ const personagens = [
     historia:
       "Um lunatico ? Um fiel ? Chame-o do que quiser, a verdade é que esse bastião encouraçado a muito jogou fora seus deveres como um Bha'Karl e trocou a violência desenfreada e sacrifícios, por uma vida pacifica ajudando aqueles que precisam. Sua devoção ao estudo sobre o Farol e as forças que o habitam entretanto, corromperam sua mente, o tornando um tanto quanto... Peculiar.",
     curiosidade:
-      "?????????????? Sinceramente nem nós sabemos, ele é meio esquisitinho mas amamos ele mesmo assim",
+      "????????",
     frase: "Pobre alma... Que caminho te trouxe até aqui ?",
   },
 ];

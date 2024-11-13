@@ -33,7 +33,7 @@ footer {
   padding: 0 10%;
 }
 
-h2 {
+h2, h3 {
   font-family: "eXO2Stencil", serif;
   color: #250909;
   font-size: 5em;
@@ -293,9 +293,7 @@ main #personagens .cards img:hover {
 #modal .modalContent span {
   position: absolute;
   cursor: pointer;
-  color: white;
-  top: 10px;
-  right: 10px;
+  color: #250909;
 }
 
 #modal .modalContent .ilustracaoNome {
@@ -451,6 +449,39 @@ main #inscrevase .access form button {
   padding-top: 0.1rem;
   margin-top: 1rem;
   font-size: 1.3rem;
+}
+
+/* modal inscrevasse */
+
+#modalIncrevase {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  backdrop-filter: blur(5px);
+  padding: 5% 0;
+}
+
+#modalIncrevase .modalWrapper {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border: 7px solid #250909;
+  background: url(assets/fundo_ficha.png);
+}
+
+#modalIncrevase .modalWrapper h3 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#modalIncrevase .modalWrapper p {
+  color: #250909;
+  margin-top: 1rem;
 }
 
 /* footer */
