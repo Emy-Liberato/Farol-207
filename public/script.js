@@ -10,7 +10,7 @@ function openModalPersonagem(nomeDoPersonagem) {
 
   modalPersonagens.innerHTML = `
     <div class="modalContent">
-      <span onclick="closeModalPersonagem()">X</span>
+      <span onclick="closeModalPersonagem()"><i class="uil uil-multiply"></i></span>
       <div class="ilustracaoNome">
         <h2>
           ${personagem.nome}

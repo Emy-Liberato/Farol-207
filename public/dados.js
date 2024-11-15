@@ -72,6 +72,6 @@ const personagens = [
       "Um lunatico ? Um fiel ? Chame-o do que quiser, a verdade é que esse bastião encouraçado a muito jogou fora seus deveres como um Bha'Karl e trocou a violência desenfreada e sacrifícios, por uma vida pacifica ajudando aqueles que precisam. Sua devoção ao estudo sobre o Farol e as forças que o habitam entretanto, corromperam sua mente, o tornando um tanto quanto... Peculiar.",
     curiosidade:
       "????????",
-    frase: "Pobre alma... Que caminho te trouxe até aqui ?",
+    frase: "Pobre alma... Que caminho te trouxe até aqui?",
   },
 ];

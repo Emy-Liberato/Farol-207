@@ -284,29 +284,37 @@ main #personagens .cards img:hover {
 }
 
 #modal .modalContent {
+  position: relative;
   width: 62%;
   display: flex;
   border: 7px solid #250909;
   background: url(assets/fundo_ficha.png);
+  padding: 2rem;
+  gap: 1.3rem;
+  max-height: 95vh;
 }
 
 #modal .modalContent span {
   position: absolute;
   cursor: pointer;
   color: #250909;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-family: "eXO2Stencil", serif;
+  font-size: 1rem;
 }
 
 #modal .modalContent .ilustracaoNome {
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
-  margin-left: 1.1rem;
+  width: 50%;
 }
 
 #modal .modalContent div h2 {
   font-size: 3.7rem;
   text-align: center;
-  margin-left: 1.1rem;
 }
 
 #modal .modalContent div img {
@@ -315,7 +323,6 @@ main #personagens .cards img:hover {
 
 #modal .modalContent .infos {
   width: 70%;
-  margin: 2rem 3rem;
 }
 
 #modal .modalContent .infos p {
@@ -380,7 +387,7 @@ main #saibaMais #textoSaibaMais .saibaMais {
 /* nosso time */
 
 main #nossoTime h2 {
-  margin-top: 10rem;
+  margin: 10rem 0 1.4rem ;
   padding-top: 9.4rem;
   color: #decdb0;
 }
@@ -395,11 +402,53 @@ main #nossoTime .cardsTime .cardTime {
   flex-direction: column;
   align-items: center;
   font-size: 1.2rem;
+  margin-bottom: 1.4rem;
 }
 
-main #nossoTime .cardsTime .cardTime img {
-  width: 8.7rem;
-  margin: 2rem 0 1rem 0;
+main #nossoTime .cardsTime .cardTime .integrante {
+  width: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+main #nossoTime .cardsTime .cardTime .integrante img {
+  width: 100%;
+  cursor: pointer;
+}
+
+main #nossoTime .cardsTime .cardTime .integrante .redes {
+  position: absolute;
+  background-color:rgba(0, 0, 0, 0.6);
+  width: 93%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 0.4rem;
+  opacity: 0;
+  transform: translateY(10px);    
+  transition: 0.3s ease; 
+  overflow: hidden;
+  padding: 0.3rem;
+}
+
+main #nossoTime .cardsTime .cardTime .integrante:hover .redes {
+  opacity: 1;               
+  transform: translateY(0);   
+}
+
+main #nossoTime .cardsTime .cardTime .integrante .redes a svg {
+  width: 22.4px;
+  height: 22.4px;
+}
+
+main #nossoTime .cardsTime .cardTime .integrante .redes a i {
+  color: #decdb0;
+  font-size: 1.7rem;
+  margin: 0.4rem;
 }
 
 /* inscreva-se */
