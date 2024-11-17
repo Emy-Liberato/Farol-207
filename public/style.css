@@ -33,7 +33,8 @@ footer {
   padding: 0 10%;
 }
 
-h2, h3 {
+h2,
+h3 {
   font-family: "eXO2Stencil", serif;
   color: #250909;
   font-size: 5em;
@@ -202,6 +203,7 @@ main #hero .light {
 
 main #hero .light img {
   width: 100%;
+  pointer-events: auto;
 }
 
 main #hero .light:hover {
@@ -387,7 +389,7 @@ main #saibaMais #textoSaibaMais .saibaMais {
 /* nosso time */
 
 main #nossoTime h2 {
-  margin: 10rem 0 1.4rem ;
+  margin: 10rem 0 1.4rem;
   padding-top: 9.4rem;
   color: #decdb0;
 }
@@ -422,22 +424,22 @@ main #nossoTime .cardsTime .cardTime .integrante img {
 
 main #nossoTime .cardsTime .cardTime .integrante .redes {
   position: absolute;
-  background-color:rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   width: 93%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   bottom: 0.4rem;
   opacity: 0;
-  transform: translateY(10px);    
-  transition: 0.3s ease; 
+  transform: translateY(10px);
+  transition: 0.3s ease;
   overflow: hidden;
   padding: 0.3rem;
 }
 
 main #nossoTime .cardsTime .cardTime .integrante:hover .redes {
-  opacity: 1;               
-  transform: translateY(0);   
+  opacity: 1;
+  transform: translateY(0);
 }
 
 main #nossoTime .cardsTime .cardTime .integrante .redes a svg {

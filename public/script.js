@@ -1,7 +1,9 @@
 const modalPersonagens = document.getElementById("modal");
 const modalEmail = document.getElementById("modalIncrevase");
+const light = document.querySelector(".light");
 const body = document.body;
 
+// Modal personagens
 function openModalPersonagem(nomeDoPersonagem) {
   const personagem = personagens.find((p) => p.nome === nomeDoPersonagem);
 
@@ -47,6 +49,7 @@ function closeModalPersonagem() {
   modalPersonagens.innerHTML = "";
 }
 
+// modal increvase
 window.addEventListener("load", function () {
   const urlParams = new URLSearchParams(window.location.search);
   if (urlParams.get("sucess") === "true") {
@@ -59,4 +62,24 @@ window.addEventListener("load", function () {
   } else if (urlParams.get("sucess") === "false") {
     alert("Não deu certo :(");
   }
+});
+
+// luz do farol
+let estaAceso = false;
+
+light.addEventListener("mouseenter", () => {
+  if (!estaAceso) {
+    light.style.opacity = 1;
+  }
+});
+
+light.addEventListener("mouseleave", () => {
+  if (!estaAceso) {
+    light.style.opacity = 0;
+  }
+});
+
+light.addEventListener("click", () => {
+  estaAceso = !estaAceso;
+  light.style.opacity = estaAceso ? 1 : 0;
 });
