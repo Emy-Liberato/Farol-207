@@ -1,0 +1,32 @@
+@media screen and (max-width: 1000px) {
+  header .headerWrapper a img {
+    width: 30%;
+  }
+
+  header .headerWrapper nav li a {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  header .headerWrapper i {
+    display: flex;
+  }
+
+  header .headerWrapper .navigation {
+    display: flex;
+    background-color: rgba(0, 31, 53, 0.95);
+    position: absolute;
+    width: 15em;
+    height: 50vh;
+    right: 0;
+    top: 6.5rem;
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 1rem 0;
+  }
+
+  header .headerWrapper .navigation li a {
+    font-size: 1.4em;
+  }
+}
