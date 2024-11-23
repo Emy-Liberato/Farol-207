@@ -3,11 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="assets/farol.png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="assets/farol.png" type="image/x-icon" />
     <title>Farol 207</title>
     <link
       rel="stylesheet"
@@ -20,48 +16,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="responsividade.css">
+    <link rel="stylesheet" href="responsividade.css" />
   </head>
 
   <body>
     <div class="container">
       <img src="assets/ilustracao_fundo.png" alt="ilustração farol" />
-      <svg
-        class="waves"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        viewBox="0 24 150 28"
-        preserveAspectRatio="none"
-        shape-rendering="auto"
-      >
-        <defs>
-          <path
-            id="gentle-wave"
-            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
-          />
-        </defs>
-        <g class="parallax">
-          <use
-            xlink:href="#gentle-wave"
-            x="48"
-            y="0"
-            fill="rgba(0, 101, 110, 0.7)"
-          />
-          <use
-            xlink:href="#gentle-wave"
-            x="48"
-            y="3"
-            fill="rgb(0, 101, 107, 0.5)"
-          />
-          <use
-            xlink:href="#gentle-wave"
-            x="48"
-            y="5"
-            fill="rgb(0, 101, 107, 0.3)"
-          />
-          <use xlink:href="#gentle-wave" x="48" y="7" fill="rgb(0, 101, 107)" />
-        </g>
-      </svg>
     </div>
 
     <div id="modal" onclick="closeModalPersonagem()"></div>
@@ -81,14 +41,14 @@
         <a href="#hero">
           <img src="./assets/logo_farol207.png" alt="logo farol 207" />
         </a>
-        <nav class="navigation">
+        <nav>
           <li><a href="#historia">História</a></li>
           <li><a href="#personagens">Personagens</a></li>
           <li><a href="#saibaMais">Saiba mais</a></li>
           <li><a href="#nossoTime">Nosso time</a></li>
           <li><a href="#inscrevase">Inscreva-se</a></li>
         </nav>
-        <i class="uil uil-bars" id="menu" onclick="openMenu()"></i>
+        <i class="uil uil-bars" onclick="openMenu()"></i>
       </div>
     </header>
 
@@ -100,39 +60,74 @@
             Escolha seu personagem, prepare-se para desvendar os segredos do
             Farol 207! Você está preparado?
           </p>
-          <a href="https://www.amazon.com.br/" target="_blank">
-            <img
-              class="button"
-              src="assets/bottons/botao_compre_aqui.png"
-              alt=""
-          /></a>
+          <a href="https://www.amazon.com.br/" target="_blank"
+            ><button>Compre aqui!</button></a
+          >
         </div>
         <div class="light">
           <img src="assets/luz_farol.png" alt="" />
         </div>
+        <svg
+          class="waves"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28"
+          preserveAspectRatio="none"
+          shape-rendering="auto"
+        >
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+            />
+          </defs>
+          <g class="parallax">
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="0"
+              fill="rgba(0, 101, 110, 0.7)"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="3"
+              fill="rgb(0, 101, 107, 0.5)"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="5"
+              fill="rgb(0, 101, 107, 0.3)"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="7"
+              fill="rgb(0, 101, 107)"
+            />
+          </g>
+        </svg>
       </section>
 
       <section id="historia">
         <img id="caixa3D" src="assets/caixa_3D.png" alt="mockup da caixa" />
         <div class="textoHistoria">
           <h2>História</h2>
-          <p>
-            Os piratas da tripulação Leviatã sofreram um trágico naufrágio
-            enquanto navegavam, e atravessaram o véu da realidade indo parar em
-            uma ilha deserta onde o Farol 207 brasileiro habita. Os náufragos
-            são seduzidos a entrar no farol, que se mostra como a única rota de
-            fuga existente para o grupo, onde o objetivo é alcançar o último
-            andar, acendendo a luz do farol para voltar à realidade que eles
-            conhecem, porém, a subida até o topo é repleta de percalços pelo
-            caminho como: ajudas inesperadas, armadilhas perigosas, monstros
-            aterrorizantes e até a traição de seus aliados que perderem
-            completamente a sanidade.
-          </p>
-          <img
-            id="caixaTexto"
-            src="assets/caixa_texto_historia (1).png"
-            alt=""
-          />
+          <div>
+            <p>
+              Os piratas da tripulação Leviatã sofreram um trágico naufrágio
+              enquanto navegavam, e atravessaram o véu da realidade indo parar
+              em uma ilha deserta onde o Farol 207 brasileiro habita. Os
+              náufragos são seduzidos a entrar no farol, que se mostra como a
+              única rota de fuga existente para o grupo, onde o objetivo é
+              alcançar o último andar, acendendo a luz do farol para voltar à
+              realidade que eles conhecem, porém, a subida até o topo é repleta
+              de percalços pelo caminho como: ajudas inesperadas, armadilhas
+              perigosas, monstros aterrorizantes e até a traição de seus aliados
+              que perderem completamente a sanidade.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -191,8 +186,8 @@
             <a
               target="_blank"
               href="https://open.spotify.com/playlist/1DEepmEwsMygTAimPP8QTI"
-              ><img src="assets/bottons/botao_playlist.png" alt=""
-            /></a>
+              ><button>Visite nossa playlist</button>></a
+            >
           </div>
           <div class="saibaMais">
             <a target="_blank" href=""><i class="uil uil-map"></i></a>
@@ -206,8 +201,8 @@
               target="_blank"
               download="assets/manual.pdf"
               href="assets/manual.pdf"
-              ><img src="assets/bottons/botao_manual.png" alt=""
-            /></a>
+              ><button>Baixe o manual aqui</button></a
+            >
           </div>
         </div>
       </section>
@@ -215,13 +210,20 @@
       <section id="nossoTime">
         <h2>Nosso time</h2>
         <div class="cardsTime">
-
           <div class="cardTime">
             <div class="integrante">
               <img src="assets/squad/daniel.png" alt="Daniel" />
               <div class="redes">
-                <a target="_blank" href="https://www.instagram.com/danifjjfjskdjrkexlandkdiel/profilecard/?igsh=MTUzYWkwOXZtcnFqag=="><i class="uil uil-instagram-alt"></i></a>
-                <a target="_blank" href="https://www.linkedin.com/in/daniel-rivaldo-89a9932a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="uil uil-linkedin"></i></a>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/danifjjfjskdjrkexlandkdiel/profilecard/?igsh=MTUzYWkwOXZtcnFqag=="
+                  ><i class="uil uil-instagram-alt"></i
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/daniel-rivaldo-89a9932a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  ><i class="uil uil-linkedin"></i
+                ></a>
               </div>
             </div>
             <p>Daniel Moutinho - G759FF0</p>
@@ -232,10 +234,22 @@
             <div class="integrante">
               <img src="assets/squad/emilly.png" alt="Emilly" />
               <div class="redes">
-                <a target="_blank" href="https://www.instagram.com/emi_liberato?igsh=YXN4ODN2aWljdTZs"><i class="uil uil-instagram-alt"></i></a>
-                <a target="_blank" href="https://github.com/Emy-Liberato"><i class="uil uil-github"></i></a>
-                <a target="_blank" href="https://www.behance.net/emylibetato"><i class="uil uil-behance"></i></a>
-                <a target="_blank" href="https://www.linkedin.com/in/emilly-liberato-a08b0b26b/"><i class="uil uil-linkedin"></i></a>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/emi_liberato?igsh=YXN4ODN2aWljdTZs"
+                  ><i class="uil uil-instagram-alt"></i
+                ></a>
+                <a target="_blank" href="https://github.com/Emy-Liberato"
+                  ><i class="uil uil-github"></i
+                ></a>
+                <a target="_blank" href="https://www.behance.net/emylibetato"
+                  ><i class="uil uil-behance"></i
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/emilly-liberato-a08b0b26b/"
+                  ><i class="uil uil-linkedin"></i
+                ></a>
               </div>
             </div>
             <p>Emilly Liberato - N247916</p>
@@ -246,7 +260,11 @@
             <div class="integrante">
               <img src="assets/squad/liebe.png" alt="Liebe" />
               <div class="redes">
-                <a target="_blank" href="https://www.instagram.com/aetrnallyyyyyyyyyy/profilecard/?igsh=a2s5OHR6NG5ybTk5"><i class="uil uil-instagram-alt"></i></a>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/aetrnallyyyyyyyyyy/profilecard/?igsh=a2s5OHR6NG5ybTk5"
+                  ><i class="uil uil-instagram-alt"></i
+                ></a>
               </div>
             </div>
             <p>Liebe Barbosa - N095121</p>
@@ -257,7 +275,11 @@
             <div class="integrante">
               <img src="assets/squad/marco.png" alt="Marco" />
               <div class="redes">
-                <a target="_blank" href="https://www.instagram.com/marc00liveira/"><i class="uil uil-instagram-alt"></i></a>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/marc00liveira/"
+                  ><i class="uil uil-instagram-alt"></i
+                ></a>
               </div>
             </div>
             <p>Marco Antonio - G8295E2</p>
@@ -268,10 +290,22 @@
             <div class="integrante">
               <img src="assets/squad/milla.png" alt="Milla" />
               <div class="redes">
-                <a target="_blank" href="https://www.instagram.com/mih_llah/profilecard/?igsh=c2pyY3Q2dnJqY3F0"><i class="uil uil-instagram-alt"></i></a>
-                <a target="_blank" href="https://bonaldimilla.artstation.com/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="artstation">
-                  <path fill="#decdb0" d="M4.2 22.5h13.48l-2.796-4.809H.001L0 17.69l2.031 3.483A2.426 2.426 0 0 0 4.2 22.5zM12.894 14.273 7.439 4.899l-5.455 9.374zM23.511 19.174c.09-.15.991-1.392.095-2.77v.001L15.756 2.78a2.43 2.43 0 0 0-2.144-1.28H9.436l12.153 20.979 1.922-3.305z"></path>
-                </svg>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/mih_llah/profilecard/?igsh=c2pyY3Q2dnJqY3F0"
+                  ><i class="uil uil-instagram-alt"></i
+                ></a>
+                <a target="_blank" href="https://bonaldimilla.artstation.com/"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    id="artstation"
+                  >
+                    <path
+                      fill="#decdb0"
+                      d="M4.2 22.5h13.48l-2.796-4.809H.001L0 17.69l2.031 3.483A2.426 2.426 0 0 0 4.2 22.5zM12.894 14.273 7.439 4.899l-5.455 9.374zM23.511 19.174c.09-.15.991-1.392.095-2.77v.001L15.756 2.78a2.43 2.43 0 0 0-2.144-1.28H9.436l12.153 20.979 1.922-3.305z"
+                    ></path>
+                  </svg>
                 </a>
               </div>
             </div>
@@ -283,9 +317,21 @@
             <div class="integrante">
               <img src="assets/squad/rafael.png" alt="Rafael" />
               <div class="redes">
-                <a target="_blank" href="https://www.instagram.com/fael.alv?igsh=MW0yZGRjOWRlbmc5dw=="><i class="uil uil-instagram-alt"></i></a>
-                <a target="_blank" href="https://www.behance.net/rafaelsouza1212"><i class="uil uil-behance"></i></a>
-                <a target="_blank" href="https://www.linkedin.com/in/rafael-alves-de-souza-72343a192?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="uil uil-linkedin"></i></a>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/fael.alv?igsh=MW0yZGRjOWRlbmc5dw=="
+                  ><i class="uil uil-instagram-alt"></i
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://www.behance.net/rafaelsouza1212"
+                  ><i class="uil uil-behance"></i
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/rafael-alves-de-souza-72343a192?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  ><i class="uil uil-linkedin"></i
+                ></a>
               </div>
             </div>
             <p>Rafael Alves - N0739D1</p>
@@ -296,9 +342,17 @@
             <div class="integrante">
               <img src="assets/squad/taissa.png" alt="Taissa" />
               <div class="redes">
-                <a target="_blank" href="https://www.instagram.com/tai_leoelho/"><i class="uil uil-instagram-alt"></i></a>
-                <a target="_blank" href="https://www.behance.net/taissadmassari"><i class="uil uil-behance"></i></a>
-                <a target="_blank" href="https://www.linkedin.com/in/taissa-domingues-massari-512538202/"><i class="uil uil-linkedin"></i></a>
+                <a target="_blank" href="https://www.instagram.com/tai_leoelho/"
+                  ><i class="uil uil-instagram-alt"></i
+                ></a>
+                <a target="_blank" href="https://www.behance.net/taissadmassari"
+                  ><i class="uil uil-behance"></i
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/taissa-domingues-massari-512538202/"
+                  ><i class="uil uil-linkedin"></i
+                ></a>
               </div>
             </div>
             <p>Taissa Domingues - N061EH3</p>
@@ -309,14 +363,25 @@
             <div class="integrante">
               <img src="assets/squad/vitoria.png" alt="Vitoria" />
               <div class="redes">
-                <a target="_blank" href="https://www.instagram.com/byy_viz/profilecard/?igsh=MW5oYWcxdmt6b29kZQ=="><i class="uil uil-instagram-alt"></i></a>
-                <a target="_blank" href="https://www.behance.net/vitria_z1"><i class="uil uil-behance"></i></a>
-                <a target="_blank" href="https://www.linkedin.com/in/vit%C3%B3ria-zanoni-da-costa-2aa2b5266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="uil uil-linkedin"></i></a>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/byy_viz/profilecard/?igsh=MW5oYWcxdmt6b29kZQ=="
+                  ><i class="uil uil-instagram-alt"></i
+                ></a>
+                <a target="_blank" href="https://www.behance.net/vitria_z1"
+                  ><i class="uil uil-behance"></i
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/vit%C3%B3ria-zanoni-da-costa-2aa2b5266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  ><i class="uil uil-linkedin"></i
+                ></a>
               </div>
             </div>
             <p>Vitória Zanoni - N329530</p>
             <p><strong>Ilustradora e diagramadora</strong></p>
           </div>
+        </div>
       </section>
 
       <section id="inscrevase">

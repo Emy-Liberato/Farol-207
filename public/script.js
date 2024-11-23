@@ -84,17 +84,7 @@ light.addEventListener("click", () => {
   light.style.opacity = estaAceso ? 1 : 0;
 });
 
-let estaAberto = false
-
+const nav = document.querySelector("nav");
 function openMenu() {
-  const nav = document.querySelector("nav");
-  // estaAberto = !estaAberto
-  
-  nav.classList.toggle("navigation")
-
-  // if (estaAberto) {
-  //   nav.classList.add("navigation")
-  // } else {
-  //   nav.classList.remove("navigation")
-  // }
+  nav.classList.toggle("active");
 }
