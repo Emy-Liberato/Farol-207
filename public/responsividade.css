@@ -24,6 +24,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  body .container img {
+    content: url("assets/ilustracao_fundo_menor.png");
+  }
+
   header .headerWrapper {
     height: 5rem;
   }
