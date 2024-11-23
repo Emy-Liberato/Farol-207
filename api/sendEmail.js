@@ -21,7 +21,14 @@ module.exports = async (req, res) => {
     subject: "Obrigado por se Inscrever na Nossa Newsletter! 🌟",
     text: `Olá, ${nome}!
 
-Obrigado por se inscrever! Estamos ansiosos para compartilhar novidades.`,
+Queremos agradecer por assinar nossa newsletter! Estamos animados por você estar conosco e ansiosos para compartilhar conteúdos, atualizações e novidades da Boitata Jogos. Em breve, você receberá diretamente em sua caixa de entrada informações exclusivas, dicas, e novidades que estamos preparando com muito carinho.
+
+Se tiver alguma dúvida, sugestão ou apenas quiser dizer um "oi", sinta-se à vontade para responder este e-mail. Adorariamos te escutar!
+
+Obrigado mais uma vez pela confiança, e até logo!
+
+Abraços,
+Equipe Boitata Jogos.`,
   };
 
   try {
