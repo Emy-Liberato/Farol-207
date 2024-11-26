@@ -70,7 +70,8 @@ button {
 }
 
 button:hover {
-  transform: scale(1.15);
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 20px rgba(113, 143, 93, 0.4));
 }
 
 a {
@@ -140,6 +141,13 @@ header .headerWrapper nav li a {
   font-size: 1.6em;
   color: white;
   white-space: nowrap;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+header .headerWrapper nav li:hover {
+  transition: 0.25s;
+  transform: scale(1.1);
+  text-shadow: 0 0 10px #718f5d, 0 0 20px #718f5d;
 }
 
 /* hero */
@@ -262,7 +270,7 @@ main #historia .textoHistoria {
 }
 
 main #historia .textoHistoria div {
-  background-image: url("assets/textura.png"); 
+  background-image: url("assets/textura.png");
   border: 5px solid #250909;
   padding: 1rem;
   width: 110%;
@@ -302,6 +310,7 @@ main #personagens .cards img {
 }
 
 main #personagens .cards img:hover {
+  filter: drop-shadow(0 0 20px rgba(113, 143, 93, 0.7));
   transform: scale(1.1);
 }
 
@@ -475,7 +484,7 @@ main #nossoTime .cardsTime .cardTime .integrante .redes a svg {
   cursor: pointer;
   width: 20px;
   height: 20px;
-  margin-bottom: -0.3rem;
+  margin-bottom: -0.15rem;
 }
 
 main #nossoTime .cardsTime .cardTime .integrante .redes a i {
@@ -514,14 +523,29 @@ main #inscrevase .access form {
 }
 
 main #inscrevase .access form input {
-  padding-left: 0.3rem;
+  padding-left: 0.9rem;
   width: 100%;
   font-size: 1.3rem;
-  height: 3rem;
+  height: 3.6rem;
 }
 
-main #inscrevase .access form input::placeholder {
-  color: #250909;
+.input-group {
+  position: relative;
+  width: 100%;
+}
+
+.user-label {
+  position: absolute;
+  left: 15px;
+  pointer-events: none;
+  transform: translateY(1.3rem);
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input:focus ~ label,
+input:valid ~ label {
+  transform: translateY(-50%) scale(0.8);
+  margin-top: 15px;
 }
 
 main #inscrevase .access form button {

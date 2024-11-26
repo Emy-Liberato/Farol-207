@@ -24,6 +24,8 @@
       <img src="assets/ilustracao_fundo.png" alt="ilustração farol" />
     </div>
 
+    <img src="assets/" alt="">
+
     <div id="modal" onclick="closeModalPersonagem()"></div>
 
     <div id="modalIncrevase">
@@ -393,8 +395,15 @@
             <strong>concorra brindes exclusivos!</strong>
           </p>
           <form action="/api/sendEmail" method="post">
-            <input type="email" name="email" placeholder="E-mail" required />
-            <input type="text" name="nome" placeholder="Nome" required />
+            <div class="input-group">
+              <input required type="text" name="email" class="input">
+              <label class="user-label">E-mail</label>
+            </div>
+
+            <div class="input-group">
+              <input required type="text" name="nome" class="input">
+              <label class="user-label">Nome</label>
+            </div>
             <button type="submit">Enviar</button>
           </form>
         </div>
