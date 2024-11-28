@@ -1,5 +1,4 @@
 const modalPersonagens = document.getElementById("modal");
-const modalEmail = document.getElementById("modalIncrevase");
 const light = document.querySelector(".light");
 const body = document.body;
 
@@ -52,6 +51,9 @@ function closeModalPersonagem() {
 // modal increvase
 window.addEventListener("load", function () {
   const urlParams = new URLSearchParams(window.location.search);
+  const modalEmail = document.querySelector("#modalEmail"); 
+  const body = document.body;
+
   if (urlParams.get("sucess") === "true") {
     modalEmail.style.display = "flex";
     body.style.overflow = "hidden";
@@ -60,9 +62,10 @@ window.addEventListener("load", function () {
       body.style.overflow = "visible";
     }, 2500);
   } else if (urlParams.get("sucess") === "false") {
-    alert("Não deu certo :(");
+    alert("Não foi possível enviar o e-mail. Tente novamente mais tarde.");
   }
 });
+
 
 // luz do farol
 let estaAceso = false;
