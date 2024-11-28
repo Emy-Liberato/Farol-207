@@ -41,3 +41,17 @@ Equipe Boitata Jogos.`,
     return res.end();
   }
 };
+
+window.addEventListener("load", function () {
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get("sucess") === "true") {
+    modalEmail.style.display = "flex";
+    body.style.overflow = "hidden";
+    setTimeout(() => {
+      modalEmail.style.display = "none";
+      body.style.overflow = "visible";
+    }, 2500);
+  } else if (urlParams.get("sucess") === "false") {
+    alert("Não deu certo :(");
+  }
+});
