@@ -557,7 +557,7 @@ main #inscrevase .access form button {
 
 /* modal inscrevasse */
 
-#modalIncrevase {
+#modalEmail {
   display: none;
   justify-content: center;
   align-items: center;
@@ -569,7 +569,7 @@ main #inscrevase .access form button {
   padding: 5% 0;
 }
 
-#modalIncrevase .modalWrapper {
+#modalEmail .modalWrapper {
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -578,12 +578,12 @@ main #inscrevase .access form button {
   background: url(assets/textura.png);
 }
 
-#modalIncrevase .modalWrapper h3 {
+#modalEmail .modalWrapper h3 {
   font-size: 3rem;
   text-align: center;
 }
 
-#modalIncrevase .modalWrapper p {
+#modalEmail .modalWrapper p {
   color: #250909;
   margin-top: 1rem;
 }
